@@ -1,0 +1,4 @@
+config_secret.py
+output/
+tmp/
+__pycache__
