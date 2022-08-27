@@ -21,6 +21,9 @@ def main():
     # load scheduler
     ps = scheduler.ProxyScheduler()
 
+    if len(ps.config_dict) == 0:
+        ps.update_subscription()
+
     app = Flask(__name__)
 
     # CORS for debug usage
